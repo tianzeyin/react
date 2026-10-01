@@ -2,8 +2,35 @@ import logo from "./logo.svg";
 import "./App.css";
 import React from "react";
 
-//我是马+1
-//天泽是我爹
+
+
+function Sbty(){
+  const [count, setCount] = React.useState(0);
+  const [countr, setCountr] = React.useState(0);
+
+  return(
+    <div>
+      <h1>count:</h1>
+      <button onClick={()=> setCount(count-1)}>hit -1</button>
+      <button onClick={()=> setCountr(countr+1)}>shabi ty +1</button>
+      <p>{count}</p>
+      <p>sb tianze 乱叫{countr}</p>
+      <p>{count + countr}</p>
+      <p></p>
+
+      
+    </div>
+  )
+
+}
+
+export default Sbty;
+
+
+
+
+
+
 
 // function App() {
 //   const [show, setShow] = React.useState(true);
@@ -326,22 +353,25 @@ import React from "react";
 //     </div>
 //   )
 // }
-function CharacterCounter(){
-  const [character, setCharacter] = React.useState("");
-  let count;
-  for (x in character){
-    count += 1;
-  }
-  return(
-    <div>
-      <input
-      type = "text"
-      value = {character}
-      onChange = {(e) => setCharacter(e.target.value)}/>
-      <p>{count}</p>
-    </div>
-  )
-}
+// function CharacterCounter(){
+//   const [character, setCharacter] = React.useState("");
+//   let count;
+//   for (x in character){
+//     count += 1;
+//   }
+//   return(
+//     <div>
+//       <input
+//       type = "text"
+//       value = {character}
+//       onChange = {(e) => setCharacter(e.target.value)}/>
+//       <p>{count}</p>
+//     </div>
+//   )
+// }
 
-export default CharacterCounter;
+// export default CharacterCounter;
+
+
+
 
