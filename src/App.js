@@ -4,27 +4,47 @@ import React from "react";
 
 
 
-function Sbty(){
-  const [count, setCount] = React.useState(0);
-  const [countr, setCountr] = React.useState(0);
+// function Sbty(){
+//   const [count, setCount] = React.useState(0);
+//   const [countr, setCountr] = React.useState(0);
 
-  return(
-    <div>
-      <h1>count:</h1>
-      <button onClick={()=> setCount(count-1)}>hit -1</button>
-      <button onClick={()=> setCountr(countr+1)}>shabi ty +1</button>
-      <p>{count}</p>
-      <p>sb tianze 乱叫{countr}</p>
-      <p>{count + countr}</p>
-      <p></p>
+//   return(
+//     <div>
+//       <h1>count:</h1>
+//       <button onClick={()=> setCount(count-1)}>hit -1</button>
+//       <button onClick={()=> setCountr(countr+1)}>shabi ty +1</button>
+//       <p>{count}</p>
+//       <p>sb tianze 乱叫{countr}</p>
+//       <p>{count + countr}</p>
+//       <p></p>
 
       
+//     </div>
+//   )
+// }
+
+function Age(){
+  const [age, setAge] = React.useState(18);
+  let fuck;
+  if (age <= 18){
+    fuck ="this is dumb ass";
+  } else if (age == 19){
+    fuck = "wonderful";
+  } else{
+    fuck = "tianze's age";
+  }
+  return(
+    <div>
+        <button onClick = {() => setAge(age+1)}> +1 </button>
+        <button onClick = {() => setAge(age-1)}> -1</button>
+        <h1>age: {age}</h1>
+        <p>{fuck}</p>
+
     </div>
   )
-
 }
 
-export default Sbty;
+export default Age;
 
 
 
